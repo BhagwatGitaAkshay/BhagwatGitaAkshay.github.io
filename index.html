@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagwat Gita Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #BCE8FF;
+    }
+
+    header {
+      background-color: #4169e1;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #78E9FD; 
+    }
+	h3 {
+      color: #3E009D;
+      text-align: center;
+    }
+
+    .sliding-text {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: slideText 20s linear infinite;
+      color: #FBFF00
+    }
+
+    @keyframes slideText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    select{
+      padding: 10px;
+      font-size: 16px;
+      color: #000000;
+      background-color: #D5D5D5;
+    }
+    
+    label {
+      color: #3E009D;
+    }
+    
+    button {
+      padding: 10px;
+      font-size: 16px;
+      color: #ddd;
+      background-color: #4E4E4E;
+    }
+	button:hover {
+      background-color: #00C600;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    #chapter-info {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Path to Enlightenment: Bhagwat Gita Insights</h1>
+    <h2>ॐ नमो भगवते वासुदेवाय</h2>
+    <div class="sliding-text"><i>The science of life directly from the supreme personality of Godhead</i></div>
+  </header>
+
+  <main>
+    <label for="chapter-select"><strong>Select Chapter:</strong></label>
+    <select id="chapter-select">
+      <option value="select">Select</option>
+      <option value="Intro">Legend</option>
+      <option value="chapter-1">Chapter 1 (अध्यायः १)</option>
+      <option value="chapter-2">Chapter 2 (अध्यायः २)</option>
+      <option value="chapter-3">Chapter 3 (अध्यायः ३)</option>
+      <option value="chapter-4">Chapter 4 (अध्यायः ४)</option>
+      <option value="chapter-5">Chapter 5 (अध्यायः ५)</option>
+      <option value="chapter-6">Chapter 6 (अध्यायः ६)</option>
+      <option value="chapter-7">Chapter 7 (अध्यायः ७)</option>
+      <option value="chapter-8">Chapter 8 (अध्यायः ८)</option>
+      <option value="chapter-9">Chapter 9 (अध्यायः ९)</option>
+      <option value="chapter-10">Chapter 10 (अध्यायः १०)</option>
+      <option value="chapter-11">Chapter 11 (अध्यायः ११)</option>
+      <option value="chapter-12">Chapter 12 (अध्यायः १२)</option>
+      <option value="chapter-13">Chapter 13 (अध्यायः १३)</option>
+      <option value="chapter-14">Chapter 14 (अध्यायः १४)</option>
+      <option value="chapter-15">Chapter 15 (अध्यायः १५)</option>
+      <option value="chapter-16">Chapter 16 (अध्यायः १६)</option>
+      <option value="chapter-17">Chapter 17 (अध्यायः १७)</option>
+      <option value="chapter-18">Chapter 18 (अध्यायः १८)</option>
+    </select>
+    <button onclick="showChapterInfo()"><strong>Search</strong></button>
+
+    <div id="chapter-info"></div>
+  </main>
+	<footer>
+    	<p> - Akshay Bhandarkar (Inspired by the book ‘Bhagwat Gita As It Is’ by ‘The Bhaktivedanta Book Trust’)</p>
+  	</footer>
+  <script>
+    function showChapterInfo() {
+      var chapterSelect = document.getElementById('chapter-select');
+      var chapterInfo = document.getElementById('chapter-info');
+
+      switch (chapterSelect.value) {
+        case 'Intro':
+          chapterInfo.innerHTML = "<strong>Legend:</strong> <br> War broke out at Kurukshetra when the Pandavas were denied the kingdom of Hastinapur after their exile by the Kauravas. Since Dritarashtra, the then king of Hastinapur, was blind, he didn’t participate in the war. When Lord Vyasa offered him the divine vision to see the war directly from his throne, he declined it since he was not interested to see the deadly war. Therefore, his advisor ‘Sanjaya’ was provided the divine vision to see the war and narrate it to the king. Lord Shri Krishna had agreed to be the charioteer of Arjuna, the mighty Pandava archer. When Arjuna was confused about whether to fight the war, Lord Shri Krishna explained the science of life to him as Bhagwat Gita. The whole science of life as spoken by supreme Lord Shri Krishna during the divine narration between Shri Krishna and Arjuna is conveyed through Sanjaya to the king and to everyone through Maharishi Ved-Vyasa.";
+          break;
+        case 'chapter-1':
+          chapterInfo.innerHTML = "<strong>Chapter 1 (अध्यायः १)</strong>  <br> Duryodhana compares the strength of Pandavas' army with his army assembled for the battle at Kurukshetra and assures himself and his army of their victory. Then, grandsire Bhishma blows the conch shell, signalling the beginning of the war along with Lord Shri Krishna and other warriors. Arjuna asks his charioter, Shri Krishna, to take the chariot between the two armies so that he can see all eager to fight. After Shri Krishna draws the chariot to the middle, Arjuna trembles on seeing his friends, relatives, teachers and other close ones keen to fight. He sees no pleasure in killing his men and enjoying the kingdom without them. Citing to be a sin, he casts aside his bow and arrow, unwilling to fight, and sits down on his chariot in grief.";
+          break;
+        case 'chapter-2':
+          chapterInfo.innerHTML = "<strong>Chapter 2 (अध्यायः २)</strong>  <br> Shri Krishna disagrees with this, citing it as a weakness of heart. However, Arjuna needs clarification on whether to fight or not and surrender before the lord. Lord says wise persons don't lament for living as well as dead. The soul within the body is indestructible and passes into another body at death. The material body ends at death, but the soul is unborn and ever-existing. The soul can not be cut into pieces, burned by fire, moistened by water or disturbed by wind. Hence, there is no need to lament for the material body. However, even if Arjuna does not believe that the soul is indestructible, there is no need to grieve since the person who takes birth will surely die and be born again after death. Therefore, Arjuna should perform his duty to fight as a Kshatriya. Then, Shri Krishna describes him about Buddhi yoga, i.e. to work without fruitive results by knowing the reality of body and soul and abandoning all the attachments to success and failure. A man in transcendental or Krishna consciousness gives up the desire for sense gratification, is unaffected by good or evil, withdraws his senses from sense objects like a tortoise drawing its limb within its shell and fixes his mind onto the lord. Such a person is said to be in steady intelligence. But if the person develops attachment, from attachment, lust develops, and from lust develops anger. Anger leads to confusion, which in turn leads to loss of intelligence. One who overcomes this by giving up all the desires can attain real peace.";
+          break;
+        case 'chapter-3':
+          chapterInfo.innerHTML = "<strong>Chapter 3 (अध्यायः ३)</strong>  <br> Arjuna needs clarification on fruitive results and intelligence, which he thinks as practicing penance. But Shri Krishna explains that doing work without reaping for the results or profit and offering the results to the Lord helps one to remain free from material bondage. It helps to achieve the supreme. Sacrifices offered to the Lord help one clean their sins. A self-realized person performs his duty even without any purpose or reason. Lord then adds that even though there is no prescribed duty for him, nor does he have anything to obtain, he performs the duty to maintain peace in the three worlds. Arjuna asks what causes one to commit sinful acts, even unwillingly. Shri Krishna replies it is the lust. Living entities are covered by lust, like fire by smoke or mirrors by dust. Lust is never satisfied and covers the real knowledge of the living entity. One can conquer this lust by controlling one's mind and self with spiritual intelligence, i.e. working for the Lord.";
+          break;
+        case 'chapter-4':
+          chapterInfo.innerHTML = "<strong>Chapter 4 (अध्यायः ४)</strong>  <br> Shri Krishna reveals that he first spoke this life science to Vivasvan, the sun god who spoke to Manu, the father of humanity. He instructed Ikswaku, and similarly was transmitted through the chain of disciple succession. However, this succession broke over time, and the science appeared lost. Thus, whenever there is a rise in irreligion, Shri Krishna appears in his original unborn transcendental form, which lies beyond the practical experience of ordinary people and is unattached to the material world, millennium after millennium, to establish the principles of religion. One who understands his transcendental nature attains the eternal abode of the Lord and doesn’t retake birth in the material world. Lord created four divisions in human history according to three modes of material nature. However, irrespective of class, when one performs his work unattached to the modes of material nature and sacrifices the results to Shri Krishna, he is said to be situated in transcendental knowledge. Without any sacrifice, one can never live happily. Even for a person who has performed innumerable sins, transcendental knowledge burns all the sins to ashes, for such is the purity and sublimity of transcendental knowledge.";
+          break;
+        case 'chapter-5':
+          chapterInfo.innerHTML = "<strong>Chapter 5 (अध्यायः ५)</strong>  <br> Arjuna asks Shri Krishna which is better: work renunciation (tyaga) and devotional work. Shri Krishna explains that both lead to liberation, but devotional service is better. Merely renouncing activities without devotional service cannot make one happy. Also, one has nothing to renounce, as everything belongs to the Lord. So, when one is in devotional service of the Lord, one does work for the Lord and sacrifices everything to the Lord. A person working in such consciousness with a controlled mind and senses reaps the benefit of both and is said to be divine consciousness. Although engaged in sense activities like hearing, seeing, eating, sleeping, breathing, etc., the person knows that only the material senses are engaged with sense objects, and he is not entangled. Such a soul attains peace because the results of all activities are offered to Shri Krishna. A person greedy for the fruits of his labour becomes entangled with a sense of gratification and is not freed from the material birth-death cycle. However, a person in Krishna consciousness has his mind established in equanimity and sees a learned Lord Brahmana, elephant, dog and even a dog eater with equal vision. Self-realized person knows that activities of pleasure and non-pleasure have a beginning and an end, and so doesn’t see delight in them. ";
+          break;
+        case 'chapter-6':
+          chapterInfo.innerHTML = "<strong>Chapter 6 (अध्यायः ६)</strong>  <br> Shri Krishna explains that a true yogi is not the one who performs no duty by stopping material activities but the one who performs his duty without material desires or sense gratification. The mind is the best friend of a person who conquers his mind, while who fails has the mind as the worst enemy. A mind-conquered person is called a yogi for whom happiness and sorrow, heat and cold, honour and dishonour, friends and enemies are the same. He is situated in transcendence, self-realization and self-control. To practice this yoga, one should go alone to a secluded or private place, lay kusa grass on the ground, cover it with a soft cloth, sit on it firmly, and practice yoga to purify the heart. Then, holding one’s body, neck, and head erect in a straight line, staring steadily at the nose tip, should meditate upon Shri Krishna. With the regulation of eating, sleeping, and recreation (not less, not more), one gains control over his body. Ultimately, one reaches samadhi when one sees the self with the purest mind and rejoices in the self with the mind fixed on the Lord. With such control of body, mind and self, one attains the Lord. He observes Shri Krishna in all living beings as a supreme soul and all beings in Shri Krishna. In that state, one is in transcendental happiness. However, Arjuna feels this yoga is impractical as the mind is restless and unsteady. The Lord replies that even though difficult, mind control can be achieved by suitable practice and detachment. Even if a yogi is unsuccessful, by the power of divine consciousness, he is automatically attracted to yoga on the next birth. He revives the divine consciousness and tries to achieve complete success. Ultimately, he achieves complete success after many births and is united with Shri Krishna.";
+          break;
+        case 'chapter-7':
+          chapterInfo.innerHTML = "<strong>Chapter 7 (अध्यायः ७)</strong>  <br> Shri Krishna reveals that earth, water, fire, air, ether, mind, intelligence and false ego constitute his material energies while the living beings constitute his superior energy. He is everything in this universe, including the original fragrance of the earth, the taste of water, heat in fire, the syllable 'OM' in the Vedic mantras, and the life of all lives. The three states of being - goodness, passion and ignorance are his material energies. Though these energies influence everyone, the Lord is not under material control. But those who have surrendered to the Lord can overcome it. Four kinds of people- the distressed, the wealth seeker, the curious, and the searcher for knowledge of the absolute render their devotional service to the Lord. Among those who are fully knowledgeable and engage in pure devotional service to the Lord are most dearer to the Lord.";
+          break;
+        case 'chapter-8':
+          chapterInfo.innerHTML = "<strong>Chapter 8 (अध्यायः ८)</strong>  <br> Arjuna enquires about Lord Brahman, self, fruitive activities, material manifestations, demigods, Lord of sacrifice, and how can those who are engaged in the Lord’s devotional service know him at death. Shri Krishna explains that Lord Brahman is the indestructible living entity, and his eternal nature is the self. Actions comprising the development of the material bodies are called fruitive activities. Constantly changing physical nature is the material manifestation. Demigods are part of the Lord’s universal form, and Shri Krishna is the Lord of sacrifice. Whoever quits his body, remembering the Lord at the end of life, attains his nature. Hence, one should always think of Shri Krishna with their mind and intelligence fixed on him and simultaneously perform their duties. After achieving the Lord in their renounced order, great souls don’t return to this world of misery because they have achieved the highest salvation. A Lord Brahma’s day constitutes thousand cycles of ages comprising Satya, Treta, Dvapara and Kali yug, while the duration for the night is similar. All living entities manifest during Lord Brahma’s day while they are annihilated on the arrival of Lord Brahma’s night. This cycle repeats again and again. However, there is a supreme abode of Shri Krishna, which is never annihilated. Depending on different times of passing away, one does or does not return to the material world. However, the Lord’s devotees don’t care about it and are always in the Lord’s devotional service. Such people, at the end, reach the Lord’s supreme abode.";
+          break;
+        case 'chapter-9':
+          chapterInfo.innerHTML = "<strong>Chapter 9 (अध्यायः ९)</strong>  <br> Shri Krishna reveals the most confidential knowledge, which is the purest and the perfect. The whole universe is a part of the Lord’s unmanifested form, even though he is not part of cosmic manifestation. The Lord is the source of creation, and the cosmic order runs under his will. He is the father, the mother, the grandsire of the universe. Those who worship other gods attain their heavenly planet and enjoy godly delights but return to the material world after their tenure is exhausted. Similarly, those who worship ancestors go to the ancestors, and those who worship ghosts become ghosts. But those who worship the Lord go to him forever. Even though devotees of other gods worship them faithfully, they indirectly worship the Lord, the only enjoyer and master of all sacrifices. Those who understand this all-pervading transcendental and universal form of the Lord render their complete devotion to him and become significantly dearer to the Lord. Every devotee, regardless of caste, is equal to the Lord and can achieve him.";
+          break;
+        case 'chapter-10':
+          chapterInfo.innerHTML = "<strong>Chapter 10 (अध्यायः १०)</strong>  <br> Shri Krishna adds that all the various qualities, including intelligence, knowledge, freedom from doubt, forgiveness, truthfulness, control of the senses, control of the mind, happiness, distress, birth, death, fear, fearlessness, nonviolence, satisfaction, austerity, charity, fame were created by him. He is the source of all Gods, the seven great sages and the other four great sages. Arjuna has realized that Shri Krishna is the Lord of all beings but wants to understand the opulence and mystic power of the Lord again. The supreme personality replies that his opulence is limitless, yet he would tell the prominent ones. Shri Krishna is the Supersoul present in each living entity. Shri Krishna is the beginning, the middle and the end of all beings. He is Vishnu among the Adityas, the moon among the stars, Samveda among the Vedas, Indra among the demigods, Lord Shiva among the Rudras, Kubera among the Yakshas and Rakshas, Agni among the Vasus, Meru among the mountain, Bhrigu among the great sages, Sage Kapila among the perfect beings, Airavata among the elephants, Vasuki among the serpents, Garuda among the birds, Himalayas among the immovable forces and ocean among the bodies of water. He is Rama among the wielders of weapons, Lord Brahma among the creators, Arjuna among the Pandavas, silence among the secret things, the living force among the living entities, and the inexhaustible time. All the opulent and glorious creations are just a fragment of his magnificent qualities.";
+          break;
+        case 'chapter-11':
+          chapterInfo.innerHTML = "<strong>Chapter 11 (अध्यायः ११)</strong>  <br> Arjuna wishes to see the Lord’s universal form through which he entered cosmic manifestations. Shri Krishna provides divine vision to Arjuna to behold this infinite opulent form. Arjuna saw the universal form of the Lord, which had unlimited eyes, mouths, arms and bodies, decorated with many celestial garlands and bearing many divine weapons. Radiance was more than hundreds of thousands of suns. All the demigods, sages, Lord Brahma seated on a lotus flower, Lord Shiva and various other living entities assembled in the Lord’s body. The form had no end, middle and beginning. The form was wondrous, unlimited, inexhaustible. Arjuna continuously offers his obeisance to the Lord with folded hands. Lord asks Arjuna to fight and enjoy the flourishing kingdom. Except for Pandavas, no soldiers present on the battlefield would be alive. Arjuna asks the Lord to withdraw this fearful form and show his four-armed form with a club, Conch, Chakra and lotus flower in his hands. Thus, the Lord reveals his four-armed Narayani form and, finally, his two-armed form. Arjuna was pleased to see his two-armed human form again. Lord says that this two-armed form is very rare and difficult to behold. Only by undivided devotional service can one see this rare two-armed form of the Lord.";
+          break;
+        case 'chapter-12':
+          chapterInfo.innerHTML = "<strong>Chapter 12 (अध्यायः १२)</strong>  <br> Arjuna asks among worship to Shri Krishna and the impersonal Lord Brahman, which is perfect. Lord replies that worshipping his personal form is perfect, though both worship is ultimately to the Lord only. Bhakti yoga should be followed if a person cannot fix his mind on the Lord. It involves offering loving devotion to the Lord. If a person cannot practice Bhakti yoga, he can simply give all the results of their work to the Lord. Even if this cannot be done, then one can engage in the cultivation of knowledge. Better than this is meditation, and even better is the renunciation of the fruits of action. A person who is tolerant, satisfied, free from false ego, unaffected by happiness and distress, kind friend to all living beings, free from fear and anxiety, renounces both auspicious and inauspicious things, engaged in pure devotional service with faith making Shri Krishna their supreme goal are very dear to the Lord.";
+          break;
+        case 'chapter-13':
+          chapterInfo.innerHTML = "<strong>Chapter 13 (अध्यायः १३)</strong>  <br> Arjuna asks about nature (prakriti), enjoyer (purusa), ksetra (field) and its knower (ksetra-jna), knowledge (jnanam) and its object (jneyam). Lord replies that one’s body is the field, and one who knows about it is the knower of the field. Humility, simplicity, tolerance, self-control, cleanliness, even-mindedness amid pleasant and unpleasant events, philosophical search for the absolute truth and similar attributes constitute knowledge. Supersoul, the maintainer of all living beings and situated in everyone’s heart, is the object of knowledge. Nature is the cause of all material causes and effects. The living entity and the Supersoul are its enjoyers. Supersoul can be perceived within themselves through meditation (dhyana yoga), cultivation of knowledge or working without fruitive desires. All the moving and non-moving existence one sees around are only a combination of field and knower of the field. One who sees the Supersoul accompanying the individual soul and understands that neither is indestructible actually sees. Despite contact with the material body, the soul neither performs anything nor is entangled. It is imperishable, eternal and beyond the modes of nature. When a person doesn’t see different identities in different living entities and sees Supersoul present everywhere, a person attains the transcendental destination.";
+          break;
+        case 'chapter-14':
+          chapterInfo.innerHTML = "<strong>Chapter 14 (अध्यायः १४)</strong>  <br> Shri Krishna explains three modes of material nature- goodness, passion and ignorance. Mode of goodness frees one from sinful reactions and helps situate in happiness because of the desire for material knowledge. Mode of passion bounds one to fruitive results born by unlimited desires and attachments. Mode of ignorance causes madness and binds the conditioned soul. Depending on time, one of these modes becomes predominant. A person dying in goodness mode attains higher planets of the great sages. A person dying in passion mode takes birth among those seeking fruitive results. A person dying in ignorance mode takes birth in the animal kingdom. Goodness mode leads to real knowledge development, passion mode leads to greed development, while ignorance mode leads to foolishness and illusion. When one can surpass all these three modes and knows the supreme Lord, he attains the Lord’s spiritual abode. Arjuna asks about the behaviour of a person who can surpass all this. The Lord replies that those who do not hate illumination (for knowledge), attachment (for fruitive results) and delusion (foolishness) when they are present and do not long for them when they disappear are said to have surpassed all the modes. One who engages in complete devotional service being purified by intelligence and self control giving up the objects of sense gratification, is able to surpass these modes and attain the level of Lord Brahman.";
+          break;
+        case 'chapter-15':
+          chapterInfo.innerHTML = "<strong>Chapter 15 (अध्यायः १५)</strong>  <br> Lord explains that the one who knows the banyan tree, which has its roots upwards, whose leaves are the Vedic hymns, whose branches extend up and down nourished by the three material modes, whose twigs are the object of senses are the knowers of Vedas. The roots going down represent the fruitive actions. This tree cannot be understood where it begins or ends, but one must cut this firmly rooted tree with the weapon of detachment. After detaching, one should surrender to the supreme Lord. There are two classes of living beings- one who makes mistakes and fails, representing the living entity in the material world and the one who is error-free and represents the living entity in the spiritual world. But then comes the supreme Lord who is beyond these two classes, and whoever knows this and the fact that Shri Krishna is the supreme personality of Godhead is the knower of everything.";
+          break;
+        case 'chapter-16':
+          chapterInfo.innerHTML = "<strong>Chapter 16 (अध्यायः १६)</strong>  <br> Fearlessness, purification, spiritual knowledge, charity, self-control, simplicity, truthfulness, non-violence, forgiveness, compassion for all, cleanliness, freedom from anger and similar qualities belong to the person with a divine nature which leads to liberation. Pride, arrogance, anger, harshness, ignorance and similar qualities belong to demoniac nature, which leads to bondage. Demoniac beings, being absorbed in lust and anger, cannot differentiate between right and wrong. Their anxiety and desire are immeasurable. They keep taking repeated births among demoniac beings and never attain the Lord. Thus, everyone should give up three gates to hell, namely lust, anger and greed and perform his duty.";
+          break;
+        case 'chapter-17':
+          chapterInfo.innerHTML = "<strong>Chapter 17 (अध्यायः १७)</strong>  <br> Arjuna asks whether a person is in goodness, passion or ignorance who does not worship as per the scriptures. Lord replies that a person in goodness worships demigods, in passion worships demons, and in ignorance worships ghosts. Sacrifices performed as per scriptures desiring no reward are in goodness. Those performed for some material benefit are in passion, while those performed without faith are in ignorance. Penance of the body (cleanliness, simplicity, nonviolence, worship of the supreme lord, father and mother), mind (satisfaction, self-control, purification), and speech (truthful, beneficial, pleasing to all and as per scriptures) are in goodness. Penance for pride, gaining respect, and honour are in passion, while penance in self-torture or to revenge others is in ignorance. Charity without expectation of return is in goodness, with a desire of some return is in passion, while charity at an impure place, time and to an unworthy person is in ignorance. Even the food one consumes varies depending on the material modes. Three words, ‘Om tat sat’ indicate the Supreme Absolute Truth, which was used by Lord Brahmanas while chanting hymns of the Vedas. All sacrifice, charity, and penance begin with ‘Om’ to attain the supreme. Without desiring the fruits, one should perform sacrifice, penance, and charity with the word ‘tat’ to liberate from material entanglement. The word ‘sat’ describes the Absolute Truth, which is the objective of devotional service.";
+          break;
+        case 'chapter-18':
+          chapterInfo.innerHTML = "<strong>Chapter 18 (अध्यायः १८)</strong>  <br> Arjuna wants to understand the purpose of renunciation (Tyaga) and renounced order of life (Sanyasa). Shri Krishna explains that prescribed duties, sacrifice, charity and penance should be performed as a matter of duty without expecting the result. One who renounces fruits of action is said to be truly renounced. According to Vedanta, there are five causes for accomplishing all actions, namely place of action, the performer, various senses, different kinds of endeavour, and the Supersoul. Every action performed by the mind, speech and body of a person is caused by these five factors. The knowledge by which one sees the same spiritual nature in all living beings is said to be in the mode of goodness. The knowledge by which one sees different types of living entities in different bodies is said to be in the mode of passion, while the knowledge by which one sees all in one is said to be in ignorance. One who knows about what is to be done and what is not is in goodness, who cannot distinguish between the two is in passion, while the one who considers the not-to-be-done thing as to be done and vice versa is said to be ignorance. Happiness, which is like poison in the beginning but like nectar in the end and leads to self-realization, is in the mode of goodness. Happiness, derived from sense objects, feels nectar at the start but turns poison later, is in passion. Happiness, blind to self-realization, arising from laziness, is in ignorance. After explaining this, the Lord summarized the entire science of Bhagwat Gita again. Becoming the Lord’s devotee, worshipping him and surrendering before him, one is sure to attain him. Lord declares that those who read this sacred conversation between Arjuna and the Lord with faith will be free from sinful reactions and reach the auspicious planets. With this, Arjuna’s illusion is gone, and he is prepared to act as per the Lord’s direction. At the same time, Sanjaya glorifies the Supreme Lord Shri Krishna and the holy dialogue between the Lord and Arjuna.";
+          break;
+        default:
+          chapterInfo.innerHTML = "";
+      }
+    }
+  </script>
+
+</body>
+</html>
